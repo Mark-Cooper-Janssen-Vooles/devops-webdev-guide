@@ -9,47 +9,13 @@ Let me know what you think, if I've missed anything or represented anything inco
 
 
 Contents: 
+#### Done
 - AWS 3 day course: 20, 21, 22 October
-- AWS exam
-  - Need to do this exam in grad year or after: https://aws.amazon.com/certification/certified-developer-associate/
-  - developer associate aws certification - building applications: ec2s, lambdas, dev specific stuff 
-	- devs doing course through: linux academy, slack channel for support
-  - AWS provides free study guides: https://aws.amazon.com/certification/certification-prep/
-  - There are also a lot of online resources that you can expense with your professional development budget. Courses from Udemy, A Cloud Guru, and Pluralsight are often on sale. WhizLabs Practice Exams are only US$25 and come highly recommended. Your GTL will expect you to expense something.
-- Host / hook up the front end and backend projects for quote-app
+- AWS exam certficiation https://aws.amazon.com/certification/certified-developer-associate/
 
-
-- After this do TEAM CITY tutorial! => build a pipeline! https://www.udemy.com/course/teamcity-2017-build-and-deploy-the-modern-way/
-- https://www.udemy.com/course/understanding-npm/ => swap back to frontend and do this 
-
-
-Future ideas of study: 
-- Learn "Go" language? Kotlin? 
-- Diffeent OS concepts:
-	- Sockets / networking concepts
-	- Process management
-- Learn about managing servers: Ubuntu
-- Everything under networking, security and protocls
-- Everything under "What is and how to set up a ___"
-- Web server: IIS, Nginx
-- Infrastructure as code 
-	- Terraform
-	- Kubernetes
-	- Ansible 
-	- Docker 
-- Ci/Cd tools:
-	- Teamcity
-- Infrastructure monitoring:
-	- Promethius?
-- Application Monitoring:
-	- New relic 
-- Cloud Providers:
-	- AWS
-
-
-
-For more ideas: https://roadmap.sh/devops
-
+#### Doing
+- Host / hook up the front end and backend projects for quote-app on AWS! 
+	- need backend, frontend, elastic beanstalk, dynamoDB, codebuild, github
 
 ---
 
@@ -78,6 +44,9 @@ Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopte
 
 AWS Cheatsheet (long):
 https://github.dev.xero.com/mark-janssen-vooles/awsdeveloperassociate
+
+Miro board notes:
+https://miro.com/app/board/o9J_lRJy4wY=/
 
 Learn more about AWS here: 
 https://aws.amazon.com/
