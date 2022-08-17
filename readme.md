@@ -9,8 +9,10 @@ This document is intended to cover the aspects required for devops processes. It
 Contents: 
 - [Docker](#docker)
 - [Teamcity](#teamcity)
-- [Terraform](#terraform)
+- [Infrastructure as code: Terraform](#terraform)
 - [AWS](#aws)
+
+
 ---
 
 Useful guides to know what is the current best languages and frameworks:
@@ -37,13 +39,14 @@ More info here: https://www.jetbrains.com/teamcity/
 
 
 ---
-## Terraform
+## Infrastructure as code: Terraform
+Terraform is an extremely popular open source Infrastructure as Code (IaC) tool that can be used with many different cloud and service provider APIs. Terraform focuses on an immutable approach to infrastructure, with a terraform state file center to tracking the status of your real world infrastructure.
 
 
 
 ---
 ## AWS
-Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud platform, offering over 175 fully featured services from data centers globally. Millions of customers—including the fastest-growing startups, largest enterprises, and leading government agencies—are using AWS to lower costs, become more agile, and innovate faster.
+Amazon Web Services (AWS) is the world’s most adopted cloud platform, offering many services from data centers globally. It has millions of customers - most tech companies would either use this or Azure. AWS can help to lower costs, become more agile, and innovate faster, and implement microservices.
 
 AWS Cheatsheet (long):
 https://github.dev.xero.com/mark-janssen-vooles/awsdeveloperassociate
