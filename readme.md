@@ -11,8 +11,7 @@ Contents:
 - [Teamcity](#teamcity)
 - [Infrastructure as code: Terraform](#terraform)
 - [AWS](#aws)
-- []
-
+- [Exposing API on EC2](#exposing-an-api-on-an-ec2)
 
 ---
 
@@ -106,7 +105,7 @@ https://aws.amazon.com/
 
 ----
 
-## Web Server example 
+## Exposing an API on an EC2 
 
 When we try to expose our application to the web in production, we need to set up a web server.
 
