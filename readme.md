@@ -27,7 +27,7 @@ Docker is a way to containerise projects which reduces complexity and makes the 
 80% of time in software projects is spent managing existing software, and only 20% on innovation. Docker reduces this maintenance time and allows us to innovate more. 
 
 Notes on docker: 
-https://github.com/Mark-Cooper-Janssen-Vooles/dockerMASTERY
+- https://github.com/Mark-Cooper-Janssen-Vooles/dockerMASTERY
 
 
 ---
@@ -35,7 +35,8 @@ https://github.com/Mark-Cooper-Janssen-Vooles/dockerMASTERY
 Teamcity is a build management and continuous integration server from JetBrains.
 Teamcity allows you to use Kotlin to codify the CI/CD pipeline and its configuration. 
 
-More info here: https://www.jetbrains.com/teamcity/
+More info here: 
+- https://www.jetbrains.com/teamcity/
 
 
 ---
@@ -88,19 +89,19 @@ Terraform is maining a provisioing tool, but it can deploy apps. Relatively new.
 Ansible is mainly a configuration tool (i.e. once infrasturcutre is already provisioned). Been around for longer.
 (You can use both at once)
 
-More info here: https://www.terraform.io/
+More info here: 
+- https://www.terraform.io/
 
 ---
+
 ## AWS
 Amazon Web Services (AWS) is the world’s most adopted cloud platform, offering many services from data centers globally. It has millions of customers - most tech companies would either use this or Azure. AWS can help to lower costs, become more agile, and innovate faster, and implement microservices.
 
-AWS Cheatsheet (long):
+- Miro board notes (the best way to view!):
+https://miro.com/app/board/uXjVMUp_CK8=/ 
+- AWS Cheatsheet (long):
 https://github.dev.xero.com/mark-janssen-vooles/awsdeveloperassociate
-
-Miro board notes:
-https://miro.com/app/board/o9J_lRJy4wY=/
-
-Learn more about AWS here: 
+- Learn more about AWS here: 
 https://aws.amazon.com/
 
 ----
@@ -130,4 +131,6 @@ dotnet run --project HelloFromLinuxInstance --urls "http://*:5000;https://*:5001
 4. Connect to the web API application from outside 
   - in 1. we added port 5000-5001 as exposed for http (0.0.0.0/0)
   - we should now be able to visit our API in the browser by going to: http://ec2-x-xx-xxx-xxx.compute-1.amazonaws.com:5000/weatherforecast 
-5. A reverse proxy server like nginx or apache may be used, but is not always needed. More info [here](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel/when-to-use-a-reverse-proxy?view=aspnetcore-6.0). 
+5. If using something like AWS CodeDeploy, this will need to be run in daemon mode, i.e. by using something like `pm2`. An example of a project that does this is [Todolendar.API](https://github.com/Mark-Cooper-Janssen-Vooles/Todolendar.API)
+  - The appspec.yml is used by CodeDeploy
+  - It first runs `deploy-scripts/before_install.sh`, which installs pm2. Then `start_server.sh` and `stop_server.sh` start and stop the application using pm2. 
