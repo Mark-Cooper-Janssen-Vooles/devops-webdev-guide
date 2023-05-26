@@ -9,7 +9,7 @@ This document is intended to cover the aspects required for devops processes. It
 Contents: 
 - [Docker](#docker)
 - [Teamcity](#teamcity)
-- [Infrastructure as code: Terraform](#Infrastructure as code: Terraform)
+- [Infrastructure as code: Terraform](#infrastructure-as-code-terraform)
 - [AWS](#aws)
   - [Exposing API on EC2](#exposing-an-api-on-an-ec2)
 
