@@ -13,13 +13,14 @@ Contents:
 - [Kubernetes/K8s and Heml](#kubernetes-and-helm)
 - [AWS](#aws)
   - [Exposing API on EC2](#exposing-an-api-on-an-ec2)
+- Monitoring
+  - [New Relic](#new-relic)
 
 ---
 
 Useful guides to know what is the current best languages and frameworks:
 - https://www.thoughtworks.com/radar/languages-and-frameworks  
 - https://techradar.xero-support.com
-​
 
 ---
 ## Teamcity 
@@ -134,10 +135,10 @@ This example shows how to do that using .net 6, Krestel, aws EC2, and linux. Ins
     - confirm its installed by running `dotnet --version`
 3. Create a web API
   - run these commands:
-  ````
+````
 dotnet new webapi --name HelloFromLinuxInstance
 dotnet run --project HelloFromLinuxInstance --urls "http://*:5000;https://*:5001"
-  ````
+````
   - open a new connection to the instance and run `wget localhost:5000/weatherforecast --no-check-certificate`
   - use `cat weatherforecsast` to open the file create above and view if it worked. if it does, it means Kestrel (inbuilt web server with aws) is working 
 4. Connect to the web API application from outside 
@@ -146,3 +147,14 @@ dotnet run --project HelloFromLinuxInstance --urls "http://*:5000;https://*:5001
 5. If using something like AWS CodeDeploy, this will need to be run in daemon mode, i.e. by using something like `pm2`. An example of a project that does this is [Todolendar.API](https://github.com/Mark-Cooper-Janssen-Vooles/Todolendar.API)
   - The appspec.yml is used by CodeDeploy
   - It first runs `deploy-scripts/before_install.sh`, which installs pm2. Then `start_server.sh` and `stop_server.sh` start and stop the application using pm2. 
+
+---
+
+## New Relic 
+
+- New relic is an application performance monitoring (APM) tool that provides real-time insights into the health and performance of applications, servers and infrastructure.
+- It helps track key metrics like responds times, error rates, throughput and system health
+- Enables early detection, diagnosis and resolution of performance bottlenecks and operational issues.
+
+More info here:
+- https://github.com/Mark-Cooper-Janssen-Vooles/new-relic-training
