@@ -7,8 +7,9 @@ This document is intended to cover the aspects required for devops processes. It
 ````
 
 Contents: 
-- [Docker](#docker)
 - [Teamcity](#teamcity)
+- [Docker](#docker)
+- [Kubernetes/K8s and Heml](#kubernetes-and-helm)
 - [Infrastructure as code: Terraform](#infrastructure-as-code-terraform)
 - [AWS](#aws)
   - [Exposing API on EC2](#exposing-an-api-on-an-ec2)
@@ -21,16 +22,6 @@ Useful guides to know what is the current best languages and frameworks:
 ​
 
 ---
-## Docker 
-Docker is a way to containerise projects which reduces complexity and makes the development experience consistent accross the board regardless of the OS etc. 
-
-80% of time in software projects is spent managing existing software, and only 20% on innovation. Docker reduces this maintenance time and allows us to innovate more. 
-
-Notes on docker: 
-- https://github.com/Mark-Cooper-Janssen-Vooles/dockerMASTERY
-
-
----
 ## Teamcity 
 Teamcity is a build management and continuous integration server from JetBrains.
 Teamcity allows you to use Kotlin to codify the CI/CD pipeline and its configuration. 
@@ -38,6 +29,15 @@ Teamcity allows you to use Kotlin to codify the CI/CD pipeline and its configura
 More info here: 
 - https://www.jetbrains.com/teamcity/
 
+
+---
+## Docker 
+Docker is a way to containerise projects which reduces complexity and makes the development experience consistent accross the board regardless of the OS etc. 
+
+80% of time in software projects is spent managing existing software, and only 20% on innovation. Docker reduces this maintenance time and allows us to innovate more. 
+
+Notes on docker: 
+- https://github.com/Mark-Cooper-Janssen-Vooles/dockerMASTERY
 
 
 ---
@@ -92,6 +92,17 @@ Ansible is mainly a configuration tool (i.e. once infrasturcutre is already prov
 
 More info here: 
 - https://www.terraform.io/
+
+---
+
+## Kubernetes and Helm 
+- Kubernetes, usually referred to as k8s is an open-source platform designed for automating the deployment, scaling and management of containerized applications.
+- Helm is a package manager for k8s that simplifies the deployment and management of apps on K8s using "charts". Charts are pre-configured reusable templates that define the resources needed for an app. 
+
+- While K8s is ideal for managing and orchestrating containerized applications and microservices, Terraform (above) is used for setting up infrastructure such as servers, networking, databases, load balancers and more. 
+
+More info here: 
+- https://github.com/Mark-Cooper-Janssen-Vooles/k8s-training
 
 ---
 
