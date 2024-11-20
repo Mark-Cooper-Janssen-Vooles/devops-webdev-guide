@@ -9,8 +9,8 @@ This document is intended to cover the aspects required for devops processes. It
 Contents: 
 - [Teamcity](#teamcity)
 - [Docker](#docker)
-- [Kubernetes/K8s and Heml](#kubernetes-and-helm)
 - [Infrastructure as code: Terraform](#infrastructure-as-code-terraform)
+- [Kubernetes/K8s and Heml](#kubernetes-and-helm)
 - [AWS](#aws)
   - [Exposing API on EC2](#exposing-an-api-on-an-ec2)
 
